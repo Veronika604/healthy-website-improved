@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Личный кабинет | Veronika_health</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="nav solid" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 40 40" fill="none">
+          <line x1="20" y1="4" x2="20" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="20" cy="3.5" r="2" fill="currentColor"/>
+          <rect x="7" y="10" width="26" height="20" rx="7" stroke="currentColor" stroke-width="2" fill="none"/>
+          <circle cx="15" cy="20" r="2.2" fill="currentColor"/>
+          <circle cx="25" cy="20" r="2.2" fill="currentColor"/>
+          <path d="M16 25.5 Q20 27 24 25.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+          <line x1="13" y1="30" x2="13" y2="34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="27" y1="30" x2="27" y2="34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Veronika_health
+      </a>
+      <nav class="nav-links">
+        <a href="menu.html">Меню</a>
+        <a href="form.html">Анкета</a>
+        <button class="btn-text" id="logoutBtn">Выйти</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page" style="padding-top: 120px;">
+    <div class="page-bg"></div>
+    <div class="page-letter">П</div>
+
+    <div class="dashboard">
+      <!-- Приветствие -->
+      <div class="dashboard-head reveal" id="dash-head"></div>
+
+      <!-- Ряд статистики -->
+      <div class="stats-row reveal delay-1" id="stats"></div>
+
+      <!-- Две колонки: ИМТ + Цель -->
+      <div class="two-col">
+        <div class="card reveal delay-1" id="bmi-block"></div>
+        <div class="card reveal delay-2" id="goal-block"></div>
+      </div>
+
+      <!-- Меню + Тренировки -->
+      <div class="two-col">
+        <div class="card reveal delay-2" id="menu-card"></div>
+        <div class="card reveal delay-3" id="workouts-card"></div>
+      </div>
+
+      <!-- Анкета -->
+      <div class="card reveal delay-3" id="profile-info"></div>
+
+    </div>
+  </section>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
